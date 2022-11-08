@@ -4,10 +4,10 @@ import os
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
-from tts.app import settings
-from tts.app.apis.fastpitch.generator import Generator
-from tts.app.core import auth
-from tts.app.routes import views
+from mbaza-tts-rest-api.app import settings
+from mbaza-tts-rest-api.app.apis.fastpitch.generator import Generator
+from mbaza-tts-rest-api.app.core import auth
+from mbaza-tts-rest-api.app.routes import views
 
 # set logging
 logging.getLogger("uvicorn.error").disabled = True
